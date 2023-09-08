@@ -163,3 +163,79 @@
     }
 
 }
+
+/* SOLUZIONE ESERCIZIO 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: right-turn 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: left-turn 2s linear;
+}
+
+@keyframes right-turn {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    45% {
+        left: calc(100% - 30px);
+        top: 60px;
+    }
+
+    70% {
+        left: 10%;
+        top: 60px;
+    }
+
+    90% {
+        left: -10%;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+
+}
+
+@keyframes left-turn {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+
+    45% {
+        right: calc(100% - 30px);
+        bottom: 60px;
+    }
+
+    70% {
+        right: -20%;
+        bottom: 60px;
+    }
+
+    90% {
+        right: -20%;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+}
