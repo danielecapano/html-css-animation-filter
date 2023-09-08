@@ -131,3 +131,35 @@
     }
 
 }
+
+/* SOLUZIONE ESERCIZIO 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: left 1s linear 2 alternate;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: right 1s linear 2 alternate;
+}
+
+@keyframes left {
+    0% {
+        left: 10%;
+    }
+
+    100% {
+        left: calc(100% - 60px);
+    }
+
+}
+
+@keyframes right {
+    0% {
+        right: 20%;
+    }
+
+    100% {
+        right: calc(100% - 60px);
+    }
+
+}
