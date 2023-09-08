@@ -110,3 +110,24 @@
     }
 
 }
+
+/* SOLUZIONE ESERCIZIO 11 */
+
+.ex-11-icon:hover {
+    animation: spin-partial 2s linear;
+}
+
+@keyframes spin-partial {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    90% {
+        transform: rotate(0.75turn);
+    }
+
+    100% {
+        transform: rotate(-0turn);
+    }
+
+}
