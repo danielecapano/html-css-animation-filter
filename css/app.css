@@ -93,3 +93,20 @@
     filter: grayscale(0.5);
     filter: sepia(0.5);
 }
+
+/* SOLUZIONE ESERCIZIO 10 */
+
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(-1turn);
+    }
+
+}
